@@ -1,4 +1,4 @@
 AuthIgniter
 ===========
 
-An authentification library for CodeIgniter (2.1.3)
+Advanced users management system for CodeIgniter (2.1.3)
