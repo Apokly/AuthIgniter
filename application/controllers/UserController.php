@@ -5,9 +5,7 @@ class UserController extends CI_Controller {
     public function __construct() {
         parent::__construct();
 
-        require_once APPPATH . 'entities/User.php';
-
-        $this->load->library(array('form_validation'));
+        $this->load->library(array('form_validation', 'user'));
         $this->load->helper(array('form', 'url'));
         $this->load->model('user_model', 'users');
     }

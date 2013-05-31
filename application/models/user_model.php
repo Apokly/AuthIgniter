@@ -10,7 +10,7 @@ class User_model extends CI_Model {
 
 
     public function add(User $user) {
-        $user->cryptPassword();
+        $user->hashPassword();
         $this->db->insert(self::TABLE, $user);
         return $this->db->insert_id();
     }
